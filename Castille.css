@@ -1,0 +1,438 @@
+body {
+    padding: 0;
+    margin: 0;
+    padding-bottom: 200px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+}
+
+body>* {
+    box-sizing: border-box;
+}
+
+button {
+    font: inherit;
+    font-weight: 500;
+}
+
+:root {
+    --border-color: rgba(0, 0, 0, 0.05);
+    --searchbox-input-height: 50px;
+    --searchbox-input-radius: 5px;
+    --shadow-color: rgba(0, 0, 0, 0.08);
+    --theme-main: rgb(184, 60, 60);
+}
+
+.mobileOnly {
+    display: none;
+}
+
+/* .header .Rectangle3807{
+  width: 111px; 
+  height: 5px; 
+  left: 326px; 
+  top: 75px; 
+  position: absolute; 
+  background: #AA182C;
+  display: none;
+}  */
+
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 50px;
+    margin-bottom: 50px;
+    -webkit-box-shadow: 0px 15px 26px -14 px var(--shadow-color);
+    -moz-box-shadow: 0px 15px 26px -14 px var(--shadow-color);
+    box-shadow: 0px 15px 26px -14 px var(--shadow-color);
+}
+
+.headContainer {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.headContainer .Logo {
+    display: flex;
+    align-items: center;
+    width: 150px;
+}
+
+.headerMobileButton {
+    background-color: transparent;
+    border: none;
+    width: 30px;
+    height: 30px;
+    display: none;
+}
+
+.hamburger {
+    background-color: transparent;
+    border: none;
+    width: 30px;
+    height: 30px;
+    display: none;
+}
+
+.signup {
+    width: 100px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+}
+
+.body {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 100px;
+    margin-bottom: 60px;
+}
+
+.bodyImg {
+    padding: 10px;
+}
+
+.bodyContent {
+    max-width: 650px;
+    width: 100%;
+    text-align: center;
+}
+
+.body p {
+    margin: 20px 0;
+}
+
+.bodyTheme {
+    color: var(--theme-main);
+}
+
+.bodyTheme2 {
+    font-family: "Merriweather";
+    font-weight: 700;
+}
+
+.bodyTitle {
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.bodyBold {
+    font-weight: 700;
+    font-size: 45px;
+}
+
+.bodyText {
+    font-size: 15px;
+}
+
+.search {
+    display: grid;
+    grid-template:
+        "a b c d"
+        "e e e e";
+    grid-gap: 15px;
+    align-items: end;
+    /* justify-content: center; */
+    max-width: 1000px;
+    margin: auto;
+    padding: 30px;
+    border-radius: 5px;
+    border: 2px solid var(--border-color);
+    margin-bottom: 50px;
+
+    -webkit-box-shadow: 0px 0px 26px 1px var(--shadow-color);
+    -moz-box-shadow: 0px 0px 26px 1px var(--shadow-color);
+    box-shadow: 0px 0px 26px 1px var(--shadow-color);
+}
+
+.searchInput {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 90%;
+}
+
+.searchInput .label {
+    display: flex;
+    gap: 10px;
+    color: #4D4D4D;
+}
+
+.searchInput .label img {
+    width: 15px;
+    height: 15px;
+}
+
+.searchInput input {
+    padding-left: 15px;
+    border: 2px solid var(--border-color);
+    border-radius: var(--searchbox-input-radius);
+    outline: none;
+    width: 100%;
+    height: var(--searchbox-input-height);
+}
+
+.searchInput select {
+    padding-left: 15px;
+    border: 2px solid var(--border-color);
+    border-radius: var(--searchbox-input-radius);
+    outline: none;
+    width: 100%;
+    height: var(--searchbox-input-height);
+    color: #C4C4C4;
+}
+
+.searchBtn {
+    width: 100px;
+    width: 90%;
+    height: var(--searchbox-input-height);
+    border-radius: var(--searchbox-input-radius);
+    border: none;
+    background-color: black;
+    color: #fff;
+}
+
+.searchAddBtn {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    color: rgb(185, 185, 185);
+    font-size: 12px;
+}
+
+.card {
+    display: flex;
+    gap: 10px;
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+    box-sizing: border-box;
+
+    -webkit-box-shadow: 0px 0px 26px 1px var(--shadow-color);
+    -moz-box-shadow: 0px 0px 26px 1px var(--shadow-color);
+    box-shadow: 0px 0px 26px 1px var(--shadow-color);
+}
+
+.cardImg {
+    width: 50px;
+    height: 50px;
+}
+
+.cardData {
+    width: 80%;
+    box-sizing: border-box;
+}
+
+.cardData .status {
+    width: 100%;
+    text-align: right;
+}
+
+.cardData .status span {
+    background-color: rgba(0, 255, 0, 0.238);
+    color: rgb(0, 134, 0);
+    display: inline-block;
+    padding: 10px;
+    border-radius: 30px;
+    outline: none;
+    border: none;
+    font-weight: 700;
+    font-size: 12px;
+    padding: 5px 20px;
+    margin-left: auto;
+}
+
+.cardData .backend {
+    font-size: 16px;
+}
+
+.cardRow .name {
+    font-weight: 700;
+    font-size: 22px;
+}
+
+.cardRow {
+    /* display: flex; */
+    align-items: center;
+    gap: 15px;
+    height: fit-content;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+.cardSkills {
+    list-style-type: none;
+}
+
+.cardSkills li {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: rgb(240, 240, 240);
+    border-radius: 50px;
+    border: 1px solid var(--border-color);
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+.cardBtns button {
+    font-size: 14px;
+    height: 50px;
+    width: 260px;
+    border-radius: 5px;
+    border: 2px solid var(--border-color);
+}
+
+.Approve {
+    background-color: var(--theme-main);
+}
+
+/* Desktop view */
+
+/* Tab VIEW */
+@media only screen and (max-width: 1024px) {
+    .header {
+        padding: 10px;
+    }
+
+    .Jobs {
+        display: none;
+    }
+
+    .signup {
+        display: none;
+    }
+
+    .headerMobileButton {
+        display: unset;
+        position: absolute;
+        right: 60px;
+
+    }
+
+    .body {
+        margin: 0 10px;
+        margin-bottom: 60px;
+        justify-content: center;
+    }
+
+    .bodyImg {
+        display: none;
+    }
+
+    .search {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 15px 0;
+        max-width: 700px;
+        gap: 20px;
+    }
+
+    .hamburger {
+        display: unset;
+        position: absolute;
+        right: 20px;
+    }
+
+    .card {
+        display: flex;
+        gap: 20px;
+        max-width: 700px;
+        margin: auto;
+        height: 300px;
+    }
+
+    .cardBtns {
+        position: absolute;
+    }
+
+
+}
+
+/* Tab VIEW  */
+
+/* mobile VIEW */
+@media only screen and (max-width: 800px) {
+    .header {
+        padding: 10px;
+        margin-bottom: 30px;
+    }
+
+    .card {
+        display: flex;
+        gap: 20px;
+        max-width: 1000px;
+        margin: auto;
+        height: 350px;
+    }
+
+    .cardData .status {
+        position: absolute;
+        right: 235px;
+        top: 1095px;
+    }
+
+    .cardBtns {
+        position: absolute;
+        top: 1130px;
+        left: 80px;
+    }
+
+    .hamburger {
+        display: unset;
+    }
+
+    .headerMobileButton {
+        display: unset;
+        position: absolute;
+        right: 50px;
+    }
+
+    .signup {
+        display: none;
+    }
+
+    .Jobs {
+        display: none;
+    }
+
+    .body {
+        margin: 0 10px;
+        margin-bottom: 30px;
+    }
+
+    .bodyImg {
+        display: none;
+    }
+
+    .bodyContent {
+        text-align: left;
+    }
+
+    .search {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 15px 0;
+        gap: 20px;
+    }
+
+    .cardRow {
+        flex-basis: 100%;
+    }
+
+    .cardRow .name {
+        font-size: 18px;
+    }
+
+    .cardRow .backend {
+        font-size: 14px;
+    }
+
+}
+
+/* Mobile VIEW */
