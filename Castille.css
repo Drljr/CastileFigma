@@ -27,15 +27,6 @@ button {
     display: none;
 }
 
-/* .header .Rectangle3807{
-  width: 111px; 
-  height: 5px; 
-  left: 326px; 
-  top: 75px; 
-  position: absolute; 
-  background: #AA182C;
-  display: none;
-}  */
 
 .header {
     width: 100%;
@@ -134,14 +125,12 @@ button {
         "e e e e";
     grid-gap: 15px;
     align-items: end;
-    /* justify-content: center; */
     max-width: 1000px;
     margin: auto;
     padding: 30px;
     border-radius: 5px;
     border: 2px solid var(--border-color);
     margin-bottom: 50px;
-
     -webkit-box-shadow: 0px 0px 26px 1px var(--shadow-color);
     -moz-box-shadow: 0px 0px 26px 1px var(--shadow-color);
     box-shadow: 0px 0px 26px 1px var(--shadow-color);
@@ -209,7 +198,6 @@ button {
     margin: auto;
     padding: 20px;
     box-sizing: border-box;
-
     -webkit-box-shadow: 0px 0px 26px 1px var(--shadow-color);
     -moz-box-shadow: 0px 0px 26px 1px var(--shadow-color);
     box-shadow: 0px 0px 26px 1px var(--shadow-color);
